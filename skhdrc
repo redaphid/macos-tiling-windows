@@ -78,9 +78,8 @@
 
 # open apps
 hyper - t: open /Applications/Alacritty.app -n;
-hyper - b: open -n /Applications/Google\ Chrome.app
+hyper - b: open -n /Applications/Firefox.app
 # focus window
-
 hyper - left: yabai -m window --focus west
 hyper - right: yabai -m window --focus east
 hyper - up: yabai -m window --focus north
@@ -99,6 +98,7 @@ hyper + shift - left: yabai -m window --space prev; yabai -m space --focus prev
 
 # zoom
 hyper - m: yabai -m window --toggle zoom-fullscreen
+cmd - m: yabai -m window --toggle zoom-fullscreen
 
 :: move_window
 0x3B ; move_window
