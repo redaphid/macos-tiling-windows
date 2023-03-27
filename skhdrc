@@ -127,10 +127,10 @@ move_window < hyper - left: yabai -m window --warp west
 move_window < hyper - up: yabai -m window --warp north 
 move_window < hyper - down: yabai -m window --warp sout
 # shift + hyper - h : yabai -m window --warp east
+move_window < r: yabai -m space --balance
 
 # balance size of windows
 # shift + alt - 0 : yabai -m space --balance
- hyper - r: yabai -m space --balance
 # make floating window fill screen
 # shift + alt - up     : yabai -m window --grid 1:1:0:0:1:1
 
