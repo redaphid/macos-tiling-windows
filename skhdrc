@@ -78,7 +78,8 @@
 
 # open apps
 hyper - t: open /Applications/Alacritty.app -n;
-hyper - b: open /Applications/Firefox.app -n;
+#hyper - b: open /Applications/Firefox.app -n;
+hyper - b: open -n /Applications/Google\ Chrome.app;
 # focus window
 hyper - left: yabai -m window --focus west
 hyper - right: yabai -m window --focus east
@@ -129,7 +130,7 @@ move_window < hyper - down: yabai -m window --warp sout
 
 # balance size of windows
 # shift + alt - 0 : yabai -m space --balance
-
+ hyper - r: yabai -m space --balance
 # make floating window fill screen
 # shift + alt - up     : yabai -m window --grid 1:1:0:0:1:1
 
