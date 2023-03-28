@@ -183,7 +183,8 @@ move_window < hyper - down: yabai -m window --warp sout
 # alt - e : yabai -m window --toggle split
 
 # float / unfloat window and center on screen
-hyper - 0x32  : QUAKE=$(yabai -m query --windows | jq 'map(select( (.title == "terminal-quake"))) | .[0].id'); echo yabai -m window  $QUAKE --toggle sticky --toggle topmost --grid 3:1:0:0:1:1
+#hyper - 0x32  : QUAKE=$(yabai -m query --windows | jq 'map(select( (.title == "terminal-quake"))) | .[0].id'); yabai -m window  $QUAKE --toggle sticky --toggle topmost --grid 3:1:0:0:1:1
+hyper - 0x32  : QUAKE=$(yabai -m query --windows | jq 'map(select( (.title == "terminal-quake"))) | .[0].id'); yabai -m window  $QUAKE --toggle sticky --toggle float --toggle topmost --grid 3:1:0:0:1:1
 
 # toggle sticky(+float), topmost, picture-in-picture
 # alt - p : yabai -m window --toggle sticky --toggle topmost --toggle pip
