@@ -79,7 +79,8 @@
 # open apps
 hyper - t: open /Applications/Alacritty.app -n;
 hyper - b: open -n /Applications/Google\ Chrome.app;
-hyper - c: code
+hyper - c: open /Applications/ChatGPT.app;
+hyper - f: open ~;
 # focus window
 hyper - left: yabai -m window --focus west
 hyper - right: yabai -m window --focus east
