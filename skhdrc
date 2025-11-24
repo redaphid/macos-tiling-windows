@@ -83,7 +83,7 @@ fn - f2 -> :
 0x90 -> :
 
 # open apps
-hyper - t: wezterm;
+hyper - t: open -n /Applications/WezTerm.app;
 hyper - b: open -n /Applications/Google\ Chrome.app;
 hyper - c: open /Applications/ChatGPT.app;
 hyper - f: open ~;
@@ -113,7 +113,7 @@ cmd - m: yabai -m window --toggle zoom-fullscreen
 :: move_window
 0x3B ; move_window
 hyper - return ; move_window
-move_window < t: wezterm
+move_window < t: open -n /Applications/WezTerm.app
 move_window < b: open -n /Applications/Google\ Chrome.app
 move_window < c: code
 move_window < 0xB3; default
