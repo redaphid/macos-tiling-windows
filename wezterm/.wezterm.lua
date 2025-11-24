@@ -18,7 +18,7 @@ wezterm.log_info('🌈 Loading Cyberpunk Pastel Rave config...')
 local config_dir = wezterm.config_dir or (os.getenv('HOME') .. '/.config/wezterm')
 -- If using symlink, resolve to actual directory
 local home = os.getenv('HOME')
-config_dir = home .. '/dotfiles/wezterm'
+config_dir = home .. '/Projects/macos-tiling-windows/wezterm'
 
 package.path = config_dir .. '/?.lua;' ..
                config_dir .. '/?/init.lua;' ..
@@ -137,9 +137,5 @@ config.quick_select_patterns = {
 }
 
 -- Note: Don't override config.keys here or it will wipe out all the tmux-style bindings from the keybindings module!
-
-config.keys = {
-  {key="Enter", mods="SHIFT", action=wezterm.action{SendString="\x1b\r"}},
-}
 
 return config
