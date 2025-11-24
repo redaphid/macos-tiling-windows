@@ -76,8 +76,14 @@
 # A REFERENCE ONLY, WHEN MAKING YOUR OWN CONFIGURATION..          #
 # ############################################################### #
 
+# passthrough brightness keys to system (don't intercept)
+fn - f1 -> :
+fn - f2 -> :
+0x91 -> :
+0x90 -> :
+
 # open apps
-hyper - t: open /Applications/Alacritty.app -n;
+hyper - t: wezterm;
 hyper - b: open -n /Applications/Google\ Chrome.app;
 hyper - c: open /Applications/ChatGPT.app;
 hyper - f: open ~;
@@ -107,7 +113,7 @@ cmd - m: yabai -m window --toggle zoom-fullscreen
 :: move_window
 0x3B ; move_window
 hyper - return ; move_window
-move_window < t: open -n /Applications/Alacritty.app
+move_window < t: wezterm
 move_window < b: open -n /Applications/Google\ Chrome.app
 move_window < c: code
 move_window < 0xB3; default

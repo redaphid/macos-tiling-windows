@@ -12,6 +12,24 @@
 #
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 #yabai -m rule --add app="^ChatGPT$" manage=off
+
+# Float system windows
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^Activity Monitor$" manage=off
+yabai -m rule --add app="^Archive Utility$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Dictionary$" manage=off
+yabai -m rule --add app="^App Store$" manage=off
+yabai -m rule --add app="^Font Book$" manage=off
+yabai -m rule --add app="^Installer$" manage=off
+yabai -m rule --add app="^Disk Utility$" manage=off
+yabai -m rule --add app="^Digital Colou?r Meter$" manage=off
+
+# Float specific system dialogs
+yabai -m rule --add title="^(Opening|Software Update|About This Mac|Preferences).*" manage=off
+yabai -m rule --add title="^Archive Utility" manage=off
+
 # global settings
 yabai -m config                                 \
     mouse_follows_focus          off            \
